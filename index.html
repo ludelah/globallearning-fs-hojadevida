@@ -9,69 +9,93 @@
     <script src='scripts.js'></script>
 </head>
 <body>
-    <header>
-        <h1 class="name">LUCIANO DELAHAYE</h1>
-        <span class="title">Estudiante de ingeniería informática, desarrollador FullStack</span>
-    </header>
-    <nav>
-        <a href="https://www.linkedin.com/in/luciano-iv%C3%A1n-delahaye-7742741b8/" target="_blank" class="link">LinkedIn</a>
-        <a href="https://github.com/ludelah" target="_blank" class="link">Github</a>
-        <a href="delahayeluciano9@gmail.com" target="_blank" class="link">E-mail</a>
-    </nav>
-    <main>
-        <section class="education">
-            <h2>Educación</h2>
-                <ul>
-                    <li>Curso en desarrollo FullStack - Global Learning - En curso - Inicio: 2024</li>
-                    <li>Ingeniería en Informática - UNLaM - En curso - Inicio: 2021</li>
-                    <li>Curso de programación - Argentina Programa 2.0 - <b>Finalizado</b> - Egreso: 2021</li>
-                    <li>Bachiller en Comunicación Social - E.E.S N°37 de Morón - <b>Finalizado</b> - Egreso: 2020</li>
-                </ul>
+<header>
+    <h1 class="name">LUCIANO DELAHAYE</h1>
+</header>
+<nav id="nav">
+    <div class="link-container" id="education-button"><a class="link nav" href="#education" >Formación</a></div>
+    <div class="link-container" id="skills-button"><a class="link nav" href="#skills" >Conocimientos</a></div>
+    <div class="link-container" id="experience-button"><a class="link nav" href="#experience" >Experiencia</a></div>
+</nav>
+<main class="grid">
+    <aside id="personal-container">
+        <section class="personal">
+            <h2 class="aside-title">Datos personales</h2>
+            <ul class="list">
+                <li>Fecha de nacimiento: 7 de marzo del 2002</li>
+                <li>DNI: 44.079.616</li>
+                <li>CUIL: 20-44079616-9</li>
+                <li>Dirección: Mozart 831, Parque Avellaneda, CABA</li>
+                <li>Teléfono: 1168012669</li>
+                <li><a href="https://www.linkedin.com/in/ldelahaye/" target="_blank" class="external link">LinkedIn</a></li>
+                <li><a href="https://github.com/ludelah" target="_blank" class="external link">Github</a></li>
+                <li><a href="delahayeluciano9@gmail.com" target="_blank" class="external link">E-mail</a></li>
+            </ul>
         </section>
-        <section class="experience">
-            <h2>Experiencia laboral</h2>
-                <ul>
-                    <li>Estudio Jurídico García - Servicio Técnico - 2023 a HOY</li>
-                    <li>Librerías Cúspide - Atención al cliente - 2022 a 2023</li>
-                    <li>New Bag Srl. - Empleado de fábrica - 2021 a 2022</li>
-                </ul>
+        <section class="interests">
+            <h2 class="aside-title">Intereses</h2>
+            <ul class="list">
+                <li>Programación</li>
+                <li>Desarrollo web</li>
+                <li>Desarrollo de videojuegos</li>
+                <li>Soporte Técnico</li>
+            </ul>
+        </section>
+    </aside>
+    <div>
+        <section id="education">
+            <h2 class="main-title">Formación</h2>
+            <ul>
+                <li>Ingeniería en Informática - UNLaM - En curso - Inicio: 2024</li>
+                <li>Curso de programación - Argentina Programa 2.0 - <b>Finalizado</b> - Egreso: 2021</li>
+                <li>Bachiller en Comunicación Social - E.E.S N°37 de Morón - <b>Finalizado</b> - Egreso: 2020</li>
+            </ul>
+        </section>
+        <section id="experience">
+            <h2 class="main-title">Experiencia laboral</h2>
+            <ul>
+                <li>Embajada de EE.UU. en Buenos Aires - Soporte Técnico - 2024 a HOY</li>
+                <li>Estudio Jurídico García - Soporte Técnico - 2023 a 2024</li>
+                <li>Librerías Cúspide - Atención al cliente - 2022 a 2023</li>
+                <li>New Bag Srl. - Empleado de fábrica - 2021 a 2022</li>
+            </ul>
         </section>
         <section class="languages">
-            <h2>Idiomas</h2>
+            <h2 class="main-title">Idiomas</h2>
             <ul>
-                <li>Español: <span><b>nativo</b></span></li>
-                <li>Inglés: <span><b>bilingüe</b></span></li>
+                <li>Español: nativo</li>
+                <li>Inglés: fluído</li>
             </ul>
         </section>
-        <section class="skills">
-            <h2>Conocimientos</h2>
+        <section id="skills">
+            <h2 class="main-title">Conocimientos</h2>
             <ul>
-                <li>JavaScript</li>
-                <li>C y C++</li>
-                <li>C#</li>
-                <li>MySQL</li>
+                <li>JavaScript (NodeJS, expressJS, Electron)</li>
+                <li>C/C++</li>
+                <li>Soporte Técnico (ticketeras, manejo de inventario, setup de celulares y computadoras) </li>
+                <li>Sistemas operativos (Windows y Linux)</li>
+                <li>PostgreSQL</li>
                 <li>Linux</li>
                 <li>Git</li>
-                <li>Bootstrap</li>
             </ul>
         </section>
-        <span class="line"></span>
-        <footer class="contact">
-            <h1>Contacto</h1>
-            <div class="block">
-                <label for="name" class="name">Nombre</label>
-                <input id="name" type="text">
-            </div>
-            <div class="block">
-                <label for="subject" class="subject">Asunto</label>
-                <input id="subject" type="text">
-            </div>
-            <div class="block">
-                <label for="message" class="">Mensaje</label>
-                <input id="message" type="text">
-            </div>
-        </footer>
-    </main>
+    </div>
+</main>
+<footer class="contact-container">
+    <h1>Contacto</h1>
+    <div class="block">
+        <label for="name" class="name">Nombre</label>
+        <input id="name" type="text">
+    </div>
+    <div class="block">
+        <label for="subject" class="subject">Asunto</label>
+        <input id="subject" type="text">
+    </div>
+    <div class="block">
+        <label for="message" class="">Mensaje</label>
+        <input id="message" type="text">
+    </div>
+</footer>
 
 </body>
 </html>

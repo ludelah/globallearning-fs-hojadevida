@@ -1,7 +1,19 @@
 
 
 body {
-    background-color: beige;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
     margin: 0;
 }
 
@@ -25,6 +37,89 @@ header > span {
     font-weight: bold;
 }
 
+#nav {
+    background-color: honeydew;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.link-container {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
+    height: 40px;
+
+    background-position: center;
+    background-size: 100%;
+
+    transition: width 0.5s ease-out, background-size 0.5s ease-out;
+}
+
+.link {
+    font-family: "Calibri Light", sans-serif;
+    color: orangered;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: auto;
+
+    transition: font-size 0.5s ease-out, background-color 0.3s ease-in, font-weight 0.1s ease-out;
+}
+
+.link-container:hover {
+    font-size: 2rem;
+    width: 120%;
+    background-size: 105%;
+    .external-link {
+        background-color: black;
+        font-weight: 800;
+    }
+}
+
+.nav{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#education-button {
+    background-image: url(https://th.bing.com/th/id/OIP.QrklQ-PPPU3aKTxGL_DdoQHaE8?rs=1&pid=ImgDetMain);
+}
+
+#experience-button {
+    background-image: url(https://th.bing.com/th/id/OIP.X-OS9N5Z0jr9jc9aBOpiPgAAAA?rs=1&pid=ImgDetMain);
+}
+
+#skills-button {
+    background-image: url(https://th.bing.com/th/id/R.7e6980c76a3a36775271a59670f19c61?rik=ayfCJl5Wugr2sg&pid=ImgRaw&r=0);
+}
+
+
+
+#personal-container {
+    display: block;
+    padding: 10px;
+    justify-content: center;
+
+    background-color: honeydew;
+    border-right: 2px solid brown;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+}
 
 section {
     display: block;
@@ -32,7 +127,7 @@ section {
 section.education {
 }
 
-section > h2 {
+.main-title {
     background-color: cadetblue;
     padding-top: 5px;
     padding-left: 10px;
@@ -54,22 +149,8 @@ h2 {
     font-family: sans-serif;
 }
 
-nav {
-    background-color: honeydew;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
 
-.link {
-    font-family: "Calibri Light", sans-serif;
-    color: orangered;
 
-}
-
-.link:hover {
-    font-weight: bold;
-}
 
 footer > h1
 {
@@ -81,7 +162,9 @@ footer {
     flex-direction: column;
     align-items: center;
     padding-bottom: 100px;
-    padding-top: 100px
+    padding-top: 100px;
+
+    border-top: 5px solid black;
 }
 
 .block {
